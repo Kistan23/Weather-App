@@ -1,0 +1,206 @@
+body{
+  background: url(./img/hatter.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 2px 2px 1px black;
+  font: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+}
+/*Header*/
+.header{
+  padding-bottom: 24px;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 20px;
+  background-color: black;
+}
+
+.loginOnHeader{
+  position: absolute;
+	top: 5px;
+	left: 60px;
+  border: none;
+  display: block;
+  padding: 10px;
+  background-color: #0080ff;
+}
+
+.loginOnHeader :hover{
+  opacity: 0.8;
+}
+/*Add new tab*/
+.addTab{
+  position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 42px;
+	color: #0080ff;
+	cursor: pointer;
+}
+.addTab :hover{
+  opacity: 0.8;
+}
+/*Login*/
+#loginForm{
+  display: block;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.loginContainer{
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px black;
+  padding: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+#loginBtn{
+  border: none;
+  display: block;
+  padding: 10px;
+  background-color: #0080ff;
+  width: 100%;
+  margin: 10px 0 auto;
+}
+#loginBtn:hover{
+  opacity: 0.8;
+}
+
+#usernameField, #passwordField{
+  display: block;
+  padding: 10px;
+}
+
+.close{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: red;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+/*Wether*/
+#weatherContainer{
+  display: grid;
+  justify-content: center;
+  top: 80px;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px black;
+  padding: 50px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#weatherContainer h1{
+  margin: 5px;
+  font-size: 42px;
+  font: 'Lucida Sans Unicode', Lucida Grande, Sans-serif;
+}
+
+
+#weatherMai{
+  display: block;
+  margin-bottom: 20px;
+}
+
+#weatherMain div{
+  display: inline-block;
+}
+
+#weatherDescriptionHeader{
+  vertical-align: 50%;
+  font-size: 28px;
+}
+
+#temperature{
+  font-size: 38px;
+  vertical-align: 25%;
+}
+
+.bottomDetails{
+  font-size: 24px;
+  display: block;
+  text-align: right;
+}
+
+hr{
+  margin-bottom: 20px;
+}
+/*Search*/
+#searchContainer{
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*visibility: hidden;*/
+}
+
+#searchContainer input{
+  width: 200px;
+}
+
+#searchContainer button{
+  background-color: #0080ff;
+  width: 75px;
+}
+
+.searchControl{
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  padding: 5px;
+}
+/*Modal*/
+.bg-modal{
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+  position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents{
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+.modal-input{
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+.shut{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+&:hover{
+  color: #666;
+}

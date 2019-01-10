@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <input class="loginOnHeader"type="button" name="Login" value="Login">
+    </div>
+    <!--Modal-->
+    <div class="bg-modal">
+    	<div class="modal-contents">
+    		<div class="shut">+</div>
+    		<form action="">
+    			<input class="modal-input"type="text" placeholder="CityName">
+    			<a href="#" class="button">Submit</a>
+    		</form>
+    	</div>
+    </div>
+    <!--Login Form-->
+    <form name="login" id="loginForm" class="loginContainer">
+      Username<input type="text" name="userId" id="usernameField"/>
+      Password<input type="password" name="password" id="passwordField"/>
+      <input type="button" onclick="loginMethod(this.form)" value="Login" id="loginBtn"/>
+      <input type="reset" onclick="hideSearchContainer()" value="Cancel" id="loginBtn"/>
+    </form>
+      <!--Search-->
+    <div id="searchContainer" style="display: none">
+      <input class="searchControl" type="text" placeholder="City Name or Zipcode" id="searchInput">
+      <button class="searchControl" onclick="hideLoginForm()" type="button" id="searchBtn">Search</button>
+    </div>
+    <!--Add button-->
+    <div class="addTab">+</div>
+    <!--Weather details-->
+    <div id="weatherContainer">
+      <div class="close">+</div>
+      <div id="weatherDescription">
+        <h1 id="cityHeader"></h1>
+        <div id="weatherMain">
+          <div id="temperature"></div>
+          <div id="weatherDescriptionHeader"></div>
+          <div><img id="documentIconImg"></div>
+        </div>
+        <hr>
+        <div id="windspeed"class="bottomDetails"></div>
+        <div id="humidity" class="bottomDetails"></div>
+      </div>
+    </div>
+
+    <script  src="script.js"></script>
+  </body>
+</html>
